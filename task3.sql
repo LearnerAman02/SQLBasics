@@ -33,4 +33,4 @@ INSERT INTO dept2 VALUES
     -- MINUS
      SELECT d.ename,d.role FROM dept AS d
     LEFT JOIN dept2 AS d2 USING (empid)
-    WHERE d2.empid IS NOT NULL;
+    WHERE d2.empid IS NULL;
